@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         /* 1. Задайте массив из 5 любых целых чисел
@@ -5,5 +7,17 @@ public class Main {
            3. Вывести в консоль результат суммы первого и среднего элемента
            Примечание: Для получения последнего и среднего элементов в массиве используйте свойство length.
         */
+        int [] nums = {10,20,30,40,50}; //Объявляем массив и задаём его значения
+        int length = nums.length;
+        //System.out.println(length);
+        int last = nums[nums.length - 1]; // Получить значение последнего элемента массива
+        //System.out.println(last);
+        int temp = nums[0]; // Записали значение первого элемента массива в переменную
+        nums[0] = nums[nums.length-1]; // Записали значение последнего элемента в первый элемент массива
+        nums[nums.length-1] = temp; // Записали значение переменной в последний элемент массива
+        int sum = nums[0] + nums[((length + 1)/2)-1];
+        System.out.println("Сумма первого и среднего элемента равна " + sum);
+
+
     }
 }
