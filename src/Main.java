@@ -41,7 +41,6 @@ public class Main {
         }
         else {
             System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
-            in.next();//рекурсия, заново вызываем метод
             type = getType();
         }
         return type;
@@ -53,7 +52,6 @@ public class Main {
             }
             else {
             System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
-            in.next();//рекурсия, заново вызываем метод
             unit = getUnit();
         }
         return unit;
@@ -65,7 +63,6 @@ public class Main {
         }
         else {
             System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
-            in.next();//рекурсия, заново вызываем метод
             x = getNum();
         }
         return x;
