@@ -81,7 +81,7 @@ public class Main {
                 case 1:
                     kilogram = num;
                     gram = num * 1000;
-                    lb = num * 2.2046223302272;
+                    lb = num * 2.20462;
                     carat = num * 5000;
                     break;
                 case 2:
@@ -103,7 +103,7 @@ public class Main {
                     carat = num;
                     break;
             }
-            System.out.println("Результат: \n килограмм = " + kilogram + "\n грам = " + gram + "\n фут = " + lb + "\n карат = " + carat);
+            System.out.println("Результат: \n Килограммы = " + kilogram + "\n Граммы = " + gram + "\n Футы = " + lb + "\n Караты = " + carat);
         }
         else {
             double meter = 0;
@@ -137,7 +137,7 @@ public class Main {
                     foot = num;
                     break;
             }
-            System.out.println("Результат: \n метр = " + meter + "\n миля = " + mile + "\n ярд = " + yard + "\n фут = " + foot);
+            System.out.println("Результат: \n Метры = " + meter + "\n Мили = " + mile + "\n Ярды = " + yard + "\n Футы = " + foot);
         }
     }
 }
