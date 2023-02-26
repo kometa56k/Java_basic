@@ -14,12 +14,10 @@ public class Main {
         String[] masresult = result.split(" ");
         int lengthmas = masresult.length;
         System.out.println("Общее количество слов: " + lengthmas);
-        String result2 = result.replaceAll("[А-Яа-я0-9]","");
-        result2 = result2.replaceAll("  "," ");
-        result2 = result2.replaceAll("  "," ");
-        System.out.println(result2);
-        result2 = result2.trim();
-        String[] masresult2 = result2.split(" ");
+        String result2 = result.replaceAll("[А-Яа-я0-9]","");//удалим слова с кириллицей и цифры
+        result2 = result2.replaceAll("[\\s]{2,}"," ");//удалим лишние пробелы
+        System.out.println(result2);//выводим результат
+        String[] masresult2 = result2.split(" ");//назначаем массив из строки
         int lengthmas2 = masresult2.length;
         System.out.println("Общее количество слов из латиницы: " + lengthmas2);
     }

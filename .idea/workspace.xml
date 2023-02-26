@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="089a7594-102b-4451-84ac-2bd65ab612b7" name="Changes" comment="task 13">
+    <list default="true" id="089a7594-102b-4451-84ac-2bd65ab612b7" name="Changes" comment="Решение task 13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -51,12 +51,20 @@
       <option name="project" value="LOCAL" />
       <updated>1677401741462</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Решение task 13">
+      <created>1677405919375</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677405919375</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Решение task 12" />
     <MESSAGE value="task 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 13" />
+    <MESSAGE value="Решение task 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="Решение task 13" />
   </component>
 </project>
