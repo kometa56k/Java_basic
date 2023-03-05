@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Введите количество строк: ");
         int countStr = in.nextInt();
-        String[] str = new String[countStr];
+        String[] str = new String[countStr]; //массив строк
         Scanner in2 = new Scanner(System.in);
 
         for (int i=1; i<=countStr; i++) {
@@ -24,19 +24,15 @@ public class Main {
             str[i-1] = in2.nextLine();
         }
         for (int i = 0; i < str.length; i++) {
-            System.out.println("Строка " + (i) + ": " + str[i]);
+            System.out.println("Строка " + (i+1) + ": " + str[i]);
         }
-        //Создаем массив для того чтобы сохранять длину строк
-        int[] count = new int[countStr];
-        //Проходим по элементам массива str
-        for(int i = 0; i < str.length; i++){
-            //Сохранить текущий символ
-            for(int j = i; j < str[i].length(); j++){
-                char temp = ' ';
-                //Текущий символ сравнивается с каждым символом в данной строке
-                for(int z = j; z < str[i].length(); z++){
-                    //Если текущий символ не равен следующему символу то делаем count[]++
-                    if(str[i].charAt(j)!=str[i].charAt(z) && temp != str[i].charAt(z)){
+
+        int[] count = new int[countStr]; //массив длины строк
+        for(int i = 0; i < str.length; i++){ //проходим по каждой строке массива
+            for(int j = i; j < str[i].length(); j++){ //проходим по каждому символу строки
+                char temp = ' '; //объявляем переменную для сравнения и присваиваем ей первое значение - пробел.
+                for(int z = j; z < str[i].length(); z++){ //счетчик, в кт текущий символ j сравнивается с каждым символом z в данной строке
+                    if(str[i].charAt(j)!=str[i].charAt(z) && temp != str[i].charAt(z)){ //если текущий символ не равен следующему символу то делаем count[]++
                         temp = str[i].charAt(z);
                         count[i]++;
                     }
