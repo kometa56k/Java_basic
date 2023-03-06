@@ -12,43 +12,29 @@
 import java.util.Scanner;
 public class Main {
     static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) {
-        int n = 1;
+        boolean check = false;
+        int i = 1;
         String hint = "Подсказка";
-        String answer1 = "Сидит дед, во сто шуб одет, кто его раздевает, тот слезы проливает";
+        String answer = "Заархивированный вирус";
         System.out.println("Отгадайте загадку: \"Сидит дед, во сто шуб одет, кто его раздевает, тот слезы проливает\"");
-        int answer = getAnswer(answer1,hint,n);
-        if (answer == 1) {
+        for (i = 1; i <= 3; i++) {
+            String inputAnswer = in.nextLine();
+            if (inputAnswer.compareTo(answer) == 0) {
+                check = true;
+                break;
+            } else if (inputAnswer.compareTo(hint) == 0) {
+                System.out.println("Опасная программа");
+                i++;
+            } else {
+                System.out.println("Подумай еще!");
+            }
+            }
+        if (check) {
             System.out.println("Правильно!");
-        }
-        else {
+        } else {
             System.out.println("Обидно, приходи в другой раз");
         }
-    }
-    public static int getAnswer(String answer1, String hint, int n) {
-            int answer = 0;
-            String answer2 = in.nextLine();
-            if (answer2.compareTo(answer1) == 0) {
-                answer = 1;
-            }
-            else if (answer2.compareTo(hint) == 0 && n = 1) {
-                System.out.println("Это горький овощ");
-                n = n + 2;
-                answer = getAnswer();
-            }
-            else if (answer2.compareTo(answer1) != 0 && n = 1) {
-                System.out.println("Подумай еще!");
-                n = n + 1;
-                answer = getAnswer();
-            }
-            else if (answer2.compareTo(answer1) != 0 && n = 2) {
-                System.out.println("Подумай еще!");
-                n = n + 1;
-                answer = getAnswer();
-            }
-            else (answer2.compareTo(answer1) != 0 && n = 3) {
-                answer = 0;
-            }
-            return answer;
     }
 }
